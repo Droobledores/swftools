@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: debian:stretch
+    steps:
+      - checkout
+      - run:
+          name: Building.
+          command: ./configure
+      - run:
+          name: Building..
+          command: make
+       - run:
+          name: Building...
+          command: make install
