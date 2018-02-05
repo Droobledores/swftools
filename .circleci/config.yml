@@ -8,9 +8,13 @@ jobs:
       - run:
           name: Building.
           command: ./configure
+  build:
+    docker:
       - run:
           name: Building..
           command: make
+  build:
+    docker:
        - run:
           name: Building...
           command: make install
